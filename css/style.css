@@ -1,0 +1,97 @@
+/**
+ * Primary styles
+ *
+ * Author: Antonio Santiago
+ */
+body {
+	margin: 0;
+	padding: 0;
+	color: #eeeeee;
+	background-color: #3D3D3D;
+	font: 12px 'Courier New', Arial, sans-serif;
+	font-size: 10px;
+}
+header, footer {
+	background-color: #4f4f4f;
+	margin: 0;
+	padding: 0;
+	font: 12px 'Courier New', Arial, sans-serif;
+}
+
+header {
+	border-bottom: 1px solid #666666;
+	padding: 5px;
+	margin-bottom: 5px;
+	height: 25px;
+}
+
+#sw_title {
+	color: #E6550D;
+	font-size: 16px;
+	font-weight: bolder;
+	text-decoration: underline;
+}
+
+#main {
+	position: fixed;
+	top: 40px;
+	left: 5px;
+	right: 15px;
+	bottom: 43px;
+	margin: 0;
+	padding: 0;
+}
+
+#menu {
+	float: right;
+}
+
+#writeTitle, input {
+	display: inline-block;
+	background-color: #3D3D3D;
+	color: #eeeeee;
+	border: 1px solid #666666;
+	font: 12px 'Courier New', Arial, sans-serif;
+	min-width: 350px;
+	height: 20px;
+}
+
+#writearea {
+	width: 100%;
+	height: 100%;
+	background-color: #3D3D3D;
+	color: #eeeeee;
+	border: 1px solid #666666;
+	border-radius: 3px;
+	padding: 5px;
+	margin: 0;
+	font: 12px 'Courier New', Arial, sans-serif;
+	resize: none;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	background-color: none;
+	width: 100%;
+	border-top: 1px solid #666666;
+	padding: 5px;
+	margin-top: 5px;
+	font: 12px 'Courier New', Arial, sans-serif;
+}
+
+a, a:active, a:visited { color: #E6550D; }
+a:hover { color: #FDAE6B; }
+
+::-moz-selection{ background: #ffffff; color:#333333; text-shadow: none; }
+::selection { background:#ffffff; color:#333333; text-shadow: none; }
+
+#listDialog select {
+	background-color: #3D3D3D;
+	color: #eeeeee;
+	border: 1px solid #666666;
+	font: 12px 'Courier New', Arial, sans-serif;
+	min-width: 350px;
+	height: 20px;
+	width: 150px;
+}
