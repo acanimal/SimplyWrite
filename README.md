@@ -17,5 +17,8 @@ Feel free to contribute to this project. SimplyWrite has built using:
 * [grunt-bbb](https://github.com/backbone-boilerplate/grunt-bbb)
 * [twitter boostrap](http://twitter.github.com/bootstrap/)
 
+Once downloaded the source code you can build a release distribution using:
+
+`> bbb release`
 
 
