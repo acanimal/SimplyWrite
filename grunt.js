@@ -209,15 +209,21 @@ module.exports = function(grunt) {
     copy: {
      debug: {
        files: {
-         "dist/debug/app/": "app/**",
-         "dist/debug/vendor/": "vendor/**"
+         /*"dist/debug/app/": "app/**",
+         "dist/debug/vendor/": "vendor/**"*/
+         "dist/debug/favicon.ico": "favicon.ico",
+         "dist/debug/vendor/modernizr-2.6.2/": "vendor/modernizr-2.6.2/**",
+         "dist/debug/fonts/": "app/styles/fonts/**"
        }
      },
 
      release: {
        files: {
-         "dist/release/app/": "app/**",
-         "dist/release/vendor/": "vendor/**"
+         /*"dist/release/app/": "app/**",
+         "dist/release/vendor/": "vendor/**"*/
+         "dist/release/favicon.ico": "favicon.ico",
+         "dist/release/vendor/modernizr-2.6.2/": "vendor/modernizr-2.6.2/**",
+         "dist/release/fonts/": "app/styles/fonts/**"
        }
      }
     }
@@ -233,6 +239,6 @@ module.exports = function(grunt) {
 
   // The release task will run the debug tasks and then minify the
   // dist/debug/require.js file and CSS files.
-  grunt.registerTask("release", "debug min mincss");
+  grunt.registerTask("release", "debug min mincss targethtml copy");
 
 };

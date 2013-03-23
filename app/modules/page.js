@@ -69,7 +69,7 @@ function(app) {
     _exportButtonClick: function() {
       var title = this.model.get('title');
       var content = this.model.get('content');
-      content = content.replace(/(\r\n|\n|\r)/g,"<br />")
+      content = content.replace(/(\r\n|\n|\r)/g,"<br />");
 
       var win = window.open('');
       win.document.write(content);
