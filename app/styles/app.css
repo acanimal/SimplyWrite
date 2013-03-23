@@ -1,0 +1,493 @@
+[class^="icon-"], 
+[class*=" icon-"] {
+    background-image: none;
+    margin-right: 0.25em;
+}
+
+/* Mozilla based browsers */
+::-moz-selection {
+    background-color: #FFA !important;
+    color: #000;
+}
+
+/* Works in Safari */
+::selection {
+    background-color: #FFA !important;
+    color: #000;
+}
+
+body{
+    background-color: #eeefeb;
+    color: #555;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;  
+}
+
+.headerAreaWrapper {
+    margin-bottom: 1em; 
+}
+
+.headerArea {
+    border-bottom: 1px solid #999;
+    box-shadow: 0px 1px 1px #fff;
+    font-size: 16px;
+}
+
+.textAreaWrapper {
+    background-color: #E2E2DE;
+    padding: 15px;
+} 
+
+
+#mainActions {
+    color: #999;
+    font-weight: bold;
+}
+
+.statusArea {
+    margin-top: 5px;    
+}
+
+#message{
+    display: none;
+    margin-top: 10px;
+}
+
+#panel{
+    bottom: 20px;
+    position: absolute;
+}
+
+#pageList ul {
+    height: 200px;
+    overflow: auto;
+    border: 1px solid #666;
+    margin: 0;
+    padding: 5px;
+    list-style-type: none;
+}
+
+.modal-body #pageList ul {
+    border: none;
+}
+
+.CodeMirror,
+.CodeMirror-linenumbers {
+    background-color: transparent;
+    color: #555;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    font-size: 14px;  
+} 
+
+.CodeMirror{
+    font-family: monospace;
+    height: 100%;
+    line-height: 1.3em;
+}
+
+.CodeMirror-gutters {
+    background-color: transparent;
+}
+
+.mainActions {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    right: 10px;
+}
+
+
+.modal-backdrop {
+    background-color: #fff; 
+}
+
+.modal-backdrop, .modal-backdrop.fade.in {
+    opacity: 0.75;
+}
+
+
+.modal {
+    background-clip: padding-box;
+    background-color: transparent;
+    box-shadow: 0 0 0;
+    border: medium none;
+    border-radius: 0 0 0 0;
+    color: #000;
+    left: 0;
+    margin: 0;
+    outline: medium none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1050;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;    
+    box-sizing: border-box;         
+    padding: 3em;
+}
+
+.modal-footer {
+    background-color: transparent;
+    border-radius: 0 0 0 0;
+    border-top: 0 none;
+    margin-bottom: 0;
+    padding: 14px;
+    text-align: right;
+}
+
+.modal-header h3 {
+    letter-spacing: -0.01em;
+}
+
+.modal-header .close {
+    margin-top: 2px;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.modal-header .close .icon-cross {
+    font-size: 1.2em;
+    margin-right: 0.25em;
+    margin-top: 0.06em;
+}
+
+.modal.fade.in {
+    top: 0;
+}
+
+.modal form.filename {
+    margin-top: 9em;
+    margin-bottom: 5em;
+} 
+
+.modal input[type="text"] {
+    border-radius: 0;
+    border: 0; 
+    border-bottom: 1px solid #000;
+    color: #000;
+    font-size: 48px;
+    font-weight: bold; 
+    letter-spacing: -0.025em;
+    padding: 0; 
+    height: auto;
+    width: 66%;
+}
+
+.modal input[type="text"]:focus {
+    box-shadow: 0 0 0;
+}
+
+.modal label.col {
+    margin-top: 24px;
+}
+
+.modal h4,
+.modal label.col {
+    color: #666;
+    font-size: 14px;
+    float: left;
+    font-weight: bold;
+    width: 12em;
+}
+
+.modal-body {
+    max-height: none;
+}
+
+.modal .modal-body p {
+    color: #333;
+    font-size: 18px;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.modal-header {
+    border-bottom: 1px solid #000;
+    padding: 0 0 2px;
+    position: relative;
+}
+
+.modal .modal-footer {
+    text-align: center;
+}
+
+.modal [class^="icon-"], 
+.modal [class*=" icon-"] {
+    margin-right: 0.6em;
+    margin-top: 0.1em;
+    background-image: none;
+}
+
+.alert-info {
+    background-color: transparent;
+    border-color: transparent;
+    color: #000000;
+    font-size: 96px;
+    left: 5px;
+    letter-spacing: -3px;
+    line-height: 1em;
+    padding: 0;
+    position: absolute;
+    text-align: start;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#pageList {
+    margin-top: 2em;
+}
+
+#pageList li {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 0 auto;
+    width: 50%;
+}
+
+#pageList li + li {
+    border-top: none;
+    border-bottom: 1px solid #ccc;
+}
+
+#pageList li:nth-child(2n) {
+    background-color: #eee;
+}
+
+    li:not(#foo) > div > input[type='radio'], 
+    li:not(#foo) > div > input[type='checkbox'] {        
+        /* Hide the input, but have it still be clickable */
+        opacity: 0;    
+        float: left;
+        margin-left: -1em;
+    }
+
+    li:not(#foo) > div > input[type='radio'] + label,
+    li:not(#foo) > div > input[type='checkbox'] + label {
+        margin: 0 0 0 -20px;
+        clear: none;
+        padding: 5px 0 4px;
+        cursor: pointer;
+    }
+
+    li:not(#foo) > div > input[type='radio'] + label > span[class^="icon-"],
+    li:not(#foo) > div > input[type='checkbox'] + label > span[class^="icon-"] {
+        opacity: 0;  
+    }
+
+    li:not(#foo) > div > input[type='radio']:checked + label > span[class^="icon-"],
+    li:not(#foo) > div > input[type='checkbox']:checked + label > span[class^="icon-"] {
+        opacity: 100;   
+    }
+
+
+/* Buttons, icons & al. */
+
+label, button, select {
+    font-weight: bold;
+}
+
+#optionsButton {
+    float: right;
+    margin-right: 3em;
+}
+
+.btn {
+    background-color: transparent;
+    background-image: none; 
+    border: none;
+    box-shadow: none;
+    color: #999;
+    text-shadow: 0 0px 0px #fff;
+    padding: 4px 7px;
+}
+
+.btn-mini {
+    background-color: transparent;
+    background-image: none; 
+    border: none;
+    box-shadow: none;
+    color: #999;
+    text-shadow: 0 0px 0px #fff;
+    padding: 4px 7px;
+}
+
+.modal .btn {
+    background-color: #ddd;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    color: #000;
+    font-size: 18px;
+    padding: 12px 18px 16px;
+}
+
+.modal .btn-primary {
+    background-color: #3875d7;
+    color: #FFFFFF;
+}
+
+.modal .btn-danger {
+    background-color: #da4f49;
+    color: #FFFFFF;
+}
+
+.modal .btn-success {
+    background-color: #51a351;
+    color: #FFFFFF;
+}
+
+.modal .btn:hover,
+.modal .btn.hover {
+    background-color: #000;
+    border: 1px solid transparent;
+    color: #fff;
+}
+
+.modal .btn:active,
+.modal .btn.active {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #333;
+}
+
+.modal-footer .btn + .btn {
+    margin-left: 4em;
+}
+
+.mainActions button {
+    font-size: 13px;
+}
+
+#fullScreenButton,
+#cancelFullscreen {
+    position: absolute;
+    right: 0;
+
+}
+
+.btn:active,
+.btn.active {
+    box-shadow: none;    
+}
+
+.btn.disabled, .btn[disabled],
+.btn:hover, .btn.hover {
+    background-color: transparent;
+}
+
+/* Options panel */
+
+.monospace {
+    font-family: monospace;
+    font-weight: normal;
+}
+
+.serif {
+    font-family: Georgia, serif;
+    font-weight: normal;
+}
+
+.sans-serif {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.modal-body .opts-group {
+    margin-bottom: 6em;
+}
+
+.modal-body .opts-list li {
+    color: #000;
+    float: left;
+    font-size: 32px;
+    list-style: none;
+    margin-right: 60px;
+    padding: 0; 
+    display: inline;
+}
+
+.modal-body ul.opts-list {
+    display: table;
+    margin: 0 auto;
+}
+
+.modal-body .font_size {
+    font-size: 3em;
+}
+
+.modal-body .font_size li {
+    float: inherit;
+}
+
+.modal-body .opts-list label {
+    font-size: inherit;
+}
+
+.modal-body .font_size .font-small {
+    font-size: 0.8em;
+}
+
+.modal-body .font_size .font-medium {
+    font-size: 1em;
+}
+
+.modal-body .font_size .font-big {
+    font-size: 1.2em;
+}
+
+.modal-body #font-family {
+    margin-top: 5em;
+}
+
+.modal-body .opts-list li a {
+    color: #000;
+}
+
+.modal-body #font-family li a,
+.modal-body .font_size li a,
+.modal-body .theme li a {
+    padding: 0.1em 0.4em 0.2em;
+}
+
+.modal-body #font-family li a:hover,
+.modal-body .font_size li a:hover,
+.modal-body .theme li a:hover,
+.modal-body #font-family li a.selected,
+.modal-body .font_size li a.selected,
+.modal-body .theme li a.selected {
+/*    background-color: #666666;
+    border-radius: 0.6em 0.6em 0.6em 0.6em;
+    color: #FFFFFF;
+    padding: 0.1em 0.4em 0.2em;*/
+    text-decoration: none;
+    border-bottom: 3px solid;
+}
+
+.opts-list [class^="icon-"], 
+.opts-list [class*=" icon-"] {
+    font-size: 0.8em;
+    margin-right: 0.7em;
+    margin-top: 0.3em;
+}
+
+/* Footer Area */
+
+.footerArea {
+    color: #999999;
+    font-weight: bold;
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+/* clear */
+    .opts-group:after,
+    .opts-list:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
