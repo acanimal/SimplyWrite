@@ -16,7 +16,12 @@ function() {
       lineNumbers: true,
       lineWrap: true,
       fontFamily: 'monospace',
-      fontSize: 'font-medium'
+      fontSize: 'font-medium',
+      fontConversion: {
+        'font-small': '0.8em',
+        'font-medium': '1em',
+        'font-big': '1.2em'
+      }
     }
   };
 

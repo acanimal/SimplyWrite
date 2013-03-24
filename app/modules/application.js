@@ -141,7 +141,7 @@ function(app, TextArea, StatusPanel, Page, NewDialog, SavedDialog, OptionsDialog
         this.textArea.updateFontFamily(fontFamily);
       }, this);
       optionsDialog.on('fontSizeChanged', function(fontsize) {
-        this.textArea.updateFontSize(fontsize);
+        this.textArea.updateFontSize(app.configuration.fontConversion[fontsize]);
       }, this);
       optionsDialog.on('lineNumbersChanged', function(checked) {
         this.textArea.updateLineNumbers(checked);
