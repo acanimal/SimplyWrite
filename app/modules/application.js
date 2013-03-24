@@ -10,6 +10,7 @@ define([
   "modules/newDialog",
   "modules/savedDialog",
   "modules/optionsDialog",
+  "modules/aboutDialog",
 
   // Bootstrap
   "bootstrap", 
@@ -18,7 +19,7 @@ define([
 ],
 
 // Map dependencies from above array.
-function(app, TextArea, StatusPanel, Page, NewDialog, SavedDialog, OptionsDialog) {
+function(app, TextArea, StatusPanel, Page, NewDialog, SavedDialog, OptionsDialog, AboutDialog) {
 
   // Create a new module.
   var Application = app.module();
@@ -30,7 +31,8 @@ function(app, TextArea, StatusPanel, Page, NewDialog, SavedDialog, OptionsDialog
       "click #savedButton": "_savedButtonClick",
       "click #newButton": "_newButtonClick",
       "click #saveButton": "_saveButtonClick",
-      "click #optionsButton": "_optionsButtonClick"
+      "click #optionsButton": "_optionsButtonClick",
+      "click #aboutButton": "_aboutButtonClick"
     },
 
     MESSAGE_DURATION: 2000,
@@ -152,16 +154,29 @@ function(app, TextArea, StatusPanel, Page, NewDialog, SavedDialog, OptionsDialog
       optionsDialog.show();
     },
 
+    // Show about dialog
+    _aboutButtonClick: function() {
+      var aboutDialog = new AboutDialog.Views.Layout({});
+
+      // Show dialog
+      aboutDialog.show();
+    },
+
+    // Open specified page
     _openPage: function(event) {
       this.currentPage = this.pageCollection.get(event.pageId);
       this.textArea.setText(this.currentPage.get('content'));
       this._setMessage('Page loaded');
     },
+
+    // Create a new page
     _newPage: function() {
       this.currentPage = null;
       this.textArea.setText('Simply write...');
       this._setMessage('New page created');
     },
+
+    // Save the current page
     _savePage: function() {
       var text = this.textArea.getText();
 

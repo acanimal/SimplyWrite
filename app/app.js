@@ -13,7 +13,7 @@ function() {
     // Configuration settings
     configuration: {
       theme: 'light',
-      lineNumbers: false,
+      lineNumbers: true,
       lineWrap: true,
       fontFamily: 'monospace',
       fontSize: 'font-medium'
