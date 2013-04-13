@@ -11,8 +11,8 @@ required.
 
 SimplyWrite was made to you by:
 
-* Antonio Santiago [@acanimal](https://twitter.com/acanimal): Original idea and developer.
-* Guillem Sevilla [@gllmsvll](https://twitter.com/gllmsvll): Designer.
+* [Antonio Santiago](http://acuriousanimal.com/blog/) [@acanimal](https://twitter.com/acanimal): Original idea and developer.
+* [Guillem Sevilla](http://guillemsevilla.cat/) [@gllmsvll](https://twitter.com/gllmsvll): Designer.
 
 SimplyWrite is available under MIT license.
 
