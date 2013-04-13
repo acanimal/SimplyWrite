@@ -51,6 +51,7 @@ function(app, TextArea, StatusPanel, Page, NewDialog, SavedDialog, OptionsDialog
     initialize: function() {
       // Current working Model Page
       this.currentPage = null;
+      this.currentPageTitle = '';
 
       // Collection where store all pages 
       this.pageCollection = new Page.Collection();
@@ -170,24 +171,22 @@ function(app, TextArea, StatusPanel, Page, NewDialog, SavedDialog, OptionsDialog
     },
 
     // Create a new page
-    _newPage: function() {
+    _newPage: function(fileName) {
       this.currentPage = null;
+      this.currentPageTitle = fileName;
       this.textArea.setText('Simply write...');
       this._setMessage('New page created');
     },
 
     // Save the current page
     _savePage: function() {
+      var title = this.currentPageTitle;
       var text = this.textArea.getText();
 
       if(!this.currentPage) {
         this.currentPage = new Page.Model();
         this.pageCollection.create(this.currentPage);
       }
-
-      // Set as title the first non empty line
-      var title = text;
-      title = $.trim(title).split('\n')[0];
 
       this.currentPage.set('title', title);
       this.currentPage.set('content', text);

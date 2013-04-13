@@ -26,7 +26,7 @@ function(app) {
     // Trigger a newPage event so the application can handle it
     _newAcceptButtonClick: function() {
       this.hide();
-      this.trigger('newPage');
+      this.trigger( 'newPage', $('#newFileName').val() );
     },
     // Close the view
     _newCancelButtonClick: function() {
