@@ -134,6 +134,7 @@ body{
     margin-bottom: 0;
     padding: 14px;
     text-align: right;
+    box-shadow: none;
 }
 
 .modal-header h3 {
@@ -164,9 +165,11 @@ body{
 } 
 
 .modal input[type="text"] {
+    background: none;
     border-radius: 0;
     border: 0; 
     border-bottom: 1px solid #000;
+    box-shadow: none;
     color: #000;
     font-size: 48px;
     font-weight: bold; 
@@ -236,6 +239,7 @@ body{
     border-color: transparent;
     color: #000000;
     font-size: 96px;
+    font-weight: bold;
     left: 5px;
     letter-spacing: -3px;
     line-height: 1em;
@@ -434,6 +438,7 @@ label, button, select {
 
 .modal-body .font_size li {
     float: inherit;
+    font-weight: bold;
 }
 
 .modal-body .opts-list label {
