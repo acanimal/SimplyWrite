@@ -1,15 +1,24 @@
 SimplyWrite
 ===========
 
-SimplyWrite is a free web distraction writing.
+SimplyWrite is a free web distraction writing tool for those who like write.
+
+SimplyWrite recognizes the lightweight markup language [Markdown](http://en.wikipedia.org/wiki/Markdown)
 
 SimplyWrite stores all your writes on the client side. It makes use of HTML5 
-[local storage](http://www.html5rocks.com/en/features/storage) so no server is 
+[local storage](http://www.html5rocks.com/en/features/storage) features so no server is 
 required.
 
+SimplyWrite was made to you by:
+
+* Antonio Santiago [@acanimal](https://twitter.com/acanimal): Original idea and developer.
+* Guillem Sevilla [@gllmsvll](https://twitter.com/gllmsvll): Designer.
+
+SimplyWrite is available under MIT license.
 
 Contributions
 -------------
+
 Feel free to contribute to this project. SimplyWrite has built using:
 
 * [backbone](http://backbonejs.org/)
@@ -18,8 +27,8 @@ Feel free to contribute to this project. SimplyWrite has built using:
 * [twitter boostrap](http://twitter.github.com/bootstrap/)
 * [CodeMirror](http://codemirror.net/)
 
-Once downloaded the source code you can build a release distribution using:
+Once downloaded the source code you can:
 
-`> bbb release`
-
+* Run locally with `> bbb server`
+* Build a release distribution with `> bbb release`
 
