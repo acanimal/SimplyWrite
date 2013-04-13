@@ -57,11 +57,14 @@ function(app) {
 
     // Remove the item from the view and model fomr the collection
     _deleteButtonClick: function() {
-      var pageId = $("#"+this.model.id).val();
-      if(pageId) {
-        // Remove the model from collection and render again.
-        $(this.el).remove();
-        this.model.destroy();
+      var r = window.confirm("Are you sure you want to delete this write ???\You will lost all your data.");
+      if (r==true) {
+        var pageId = $("#"+this.model.id).val();
+        if(pageId) {
+          // Remove the model from collection and render again.
+          $(this.el).remove();
+          this.model.destroy();
+        }
       }
     },
 
