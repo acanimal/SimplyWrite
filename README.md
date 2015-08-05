@@ -1,20 +1,20 @@
 SimplyWrite
 ===========
 
-[SimplyWrite](http://acuriousanimal.com/code/SimplyWrite2/) is a free web distraction writing tool for those who like write.
+[SimplyWrite][simply-write] is a free web distraction writing tool for those who like write.
 
-[SimplyWrite](http://acuriousanimal.com/code/SimplyWrite2/) recognizes the lightweight markup language [Markdown](http://en.wikipedia.org/wiki/Markdown)
+[SimplyWrite][simply-write] recognizes the lightweight markup language [Markdown](http://en.wikipedia.org/wiki/Markdown)
 
-[SimplyWrite](http://acuriousanimal.com/code/SimplyWrite2/) stores all your writes on the client side. It makes use of HTML5 
+[SimplyWrite][simply-write] stores all your writes on the client side. It makes use of HTML5 
 [local storage](http://www.html5rocks.com/en/features/storage) features so no server is 
 required.
 
-[SimplyWrite](http://acuriousanimal.com/code/SimplyWrite2/) was made to you by:
+[SimplyWrite][simply-write] was made to you by:
 
 * [Antonio Santiago](http://acuriousanimal.com/blog/) [@acanimal](https://twitter.com/acanimal): Original idea and developer.
 * [Guillem Sevilla](http://guillemsevilla.cat/) [@gllmsvll](https://twitter.com/gllmsvll): Designer.
 
-[SimplyWrite](http://acuriousanimal.com/code/SimplyWrite2/) is available under MIT license.
+[SimplyWrite][simply-write] is available under MIT license.
 
 Contributions
 -------------
@@ -32,3 +32,4 @@ Once downloaded the source code you can:
 * Run locally with `> bbb server`
 * Build a release distribution with `> bbb release`
 
+[simply-write]: http://acanimal.github.io/SimplyWrite
